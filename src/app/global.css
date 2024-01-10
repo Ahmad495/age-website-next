@@ -1,0 +1,84 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-bottom: 5em;
+}
+
+.video-main {
+  position: relative;
+  display: inline-block;
+}
+
+.video {
+  height: 150px;
+  width: 150px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #ffffff;
+  display: inline-block;
+  background: #ff0000;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  }
+  50% {
+    opacity: 0.9;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=90)';
+  }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  }
+}
+
+.fa-play:before {
+  content: '\f04b';
+}
+
+.waves {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+  -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+}
+
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
