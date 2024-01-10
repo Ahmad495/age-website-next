@@ -21,7 +21,7 @@ export default function AboutUs() {
     <Container maxWidth='xl' sx={styling.borderStyling}>
       <Grid container py={10} justifyContent={'center'}>
         <Grid item xs={12} md={5}>
-          <Box>
+          <Box sx={{ fontSize: { xs: '1.8em', md: '3em' }, textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant='h4' color={'#B8145A'}>
               What Is Apache AGE® ?
             </Typography>
@@ -53,7 +53,7 @@ export default function AboutUs() {
           sx={{ mx: { md: 8 }, my: { xs: 8 }, width: { xs: '100%', md: '0%' } }}
         />
         <Grid item xs={12} md={5}>
-          <Box>
+          <Box sx={{ fontSize: { xs: '1.8em', md: '3em' }, textAlign: { xs: 'center', md: 'left' } }}>
             <Typography variant='h4' color={'#B8145A'}>
               What Is Apache AGE® Viewer ?
             </Typography>

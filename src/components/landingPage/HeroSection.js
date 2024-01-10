@@ -43,7 +43,7 @@ export default function HeroSection() {
             </Typography>
             <Box display={'flex'} flexDirection={'row'} justifyContent={'center'}>
               <Icon icon='bxs:quote-left' color='#CC2095' fontSize={'2em'} />
-              <Typography variant='h3' color={'white'} textAlign={'center'} sx={{ width: '80%' }}>
+              <Typography variant='h3' color={'white'} textAlign={'center'} sx={{ width: '80%', fontSize: { xs: '1.5em', md: '3em' } }}>
                 Graph Data Processing{' '}
                 <Typography
                   variant='h3'
@@ -56,6 +56,7 @@ export default function HeroSection() {
                     backgroundClip: 'text',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
+                    display: { xs: 'block', md: 'inline' },
                   }}
                 >
                   &
