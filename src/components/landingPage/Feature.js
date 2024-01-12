@@ -64,6 +64,7 @@ export default function Feature() {
                 backgroundClip: 'text',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
+                fontSize: { xs: '2.5em', md: '3em' },
               }}
             >
               Key Features

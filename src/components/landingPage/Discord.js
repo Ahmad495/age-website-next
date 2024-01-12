@@ -20,13 +20,14 @@ export default function Discord() {
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
+              fontSize: { xs: '2.5em', md: '3em' },
             }}
           >
             Join AGE Discord
           </Typography>
         </Grid>
         <Grid xs={12} md={6}>
-          <Typography variant='h4'>
+          <Typography variant='h4' sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             Got questions?{' '}
             <Typography
               component={'span'}
@@ -44,7 +45,7 @@ export default function Discord() {
               Let's Chat!
             </Typography>
           </Typography>
-          <Typography variant='h6' mt={3}>
+          <Typography variant='h6' mt={3} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             Attention,{' '}
             <Typography
               component={'span'}
@@ -64,13 +65,15 @@ export default function Discord() {
             Step into our Discord community where programming prowess meets product insights. Whether you're deep into code or simply intrigued by
             what we offer, this is your space!
           </Typography>
-          <Button
-            variant='contained'
-            sx={{ mt: 3, backgroundImage: `linear-gradient(45deg, #CE39F2, #CA0F55)` }}
-            endIcon={<Icon icon='bi:discord' />}
-          >
-            Join Discord
-          </Button>
+          <Box sx={{ display: { xs: 'flex' }, justifyContent: { xs: 'center', md: 'start' }, mb: { xs: 10, md: 0 } }}>
+            <Button
+              variant='contained'
+              sx={{ mt: 3, backgroundImage: `linear-gradient(45deg, #CE39F2, #CA0F55)` }}
+              endIcon={<Icon icon='bi:discord' />}
+            >
+              Join Discord
+            </Button>
+          </Box>
         </Grid>
         <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'}>
           <Box component={'img'} src={discordImage.src} width={'90%'} />
