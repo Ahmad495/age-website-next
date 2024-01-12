@@ -11,3 +11,40 @@ export const featureImage2 = 'https://age.apache.org/static/keyfeature02-4cb8542
 export const featureImage3 = 'https://age.apache.org/static/keyfeature03-516bc981eaeaf36d1ca64b71e4a9558a.png';
 
 export const featureImage4 = 'https://age.apache.org/static/keyfeature04-e69bb0eaddb38bb16cc9066f81d27c21.png';
+
+export const footerData = [
+  {
+    title: 'AGE',
+    items: ['Overview', 'Team', 'Release Notes'],
+  },
+  {
+    title: 'Community',
+    items: [
+      'Join Age Community',
+      'AGE Discord',
+      'AGE Forum',
+      'AGE Project',
+      'Join Age Community',
+    ],
+  },
+  {
+    title: 'Contribution',
+    items: [
+      'How to contribute',
+      'Code Convention',
+      'Committer Requirements',
+      'Release Process',
+    ],
+  },
+  {
+    title: 'Apache',
+    items: [
+      'Foundation',
+      'How Apache Works',
+      'Sponsorship',
+      'Security',
+      'License',
+      'Events',
+    ],
+  },
+];

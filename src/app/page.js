@@ -6,6 +6,7 @@ import InstalltionGuide from '@/components/landingPage/InstalltionGuide';
 import Feature from '@/components/landingPage/Feature';
 import Discord from '@/components/landingPage/Discord';
 import NewsLetter from '@/components/landingPage/NewsLetter';
+import Footer from '@/components/landingPage/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Feature />
       <Discord />
       <NewsLetter />
+      <Footer/>
     </>
   );
 }
