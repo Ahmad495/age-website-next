@@ -18,6 +18,7 @@ export default function InstalltionGuide() {
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
+              fontSize: { xs: '2.5em', md: '3em' },
             }}
           >
             Installation Guide

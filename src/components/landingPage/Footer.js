@@ -33,21 +33,17 @@ const Footer = () => {
           <Grid container spacing={5} sx={{ p: 5 }}>
             {footerData.map((section, index) => (
               <Grid key={index} item xs={12} sm={2.5}>
-                <Typography variant='h5' style={headingStyles}>
+                <Typography variant='h5' sx={{ ...headingStyles, textAlign: { xs: 'center', md: 'left' } }}>
                   {section.title}
                 </Typography>
                 {section.items.map((item, idx) => (
-                  <Typography
-                    key={idx}
-                    variant='body1'
-                    sx={{ p: 0.5, cursor: 'pointer' }}
-                  >
+                  <Typography key={idx} variant='body1' sx={{ p: 0.5, cursor: 'pointer', textAlign: { xs: 'center', md: 'left' } }}>
                     {item}
                   </Typography>
                 ))}
               </Grid>
             ))}
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={12} sm={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: { xs: 'center', md: 'start' } }}>
               <Button
                 variant='contained'
                 endIcon={<DownloadIcon />}
@@ -61,21 +57,13 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Container>
-        <Box
-          sx={{ backgroundColor: 'rgba(255, 255, 255, 0.9)', color: 'black' }}
-          p={1}
-        >
-          <Container maxWidth='xl'>
-            <Typography sx={{ fontSize: '13px' }} mt={1}>
-              Copyright © 2023 The Apache Software Foundation.
-            </Typography>
-            <Typography sx={{ fontSize: '14px' }} mt={0.5}>
-              The Apache Software Foundation Apache AGE, AGE, Apache, the Apache
-              feather, and the Apache AGE project logo are either registered
-              trademarks or trademarks of the Apache Software Foundation.
-            </Typography>
-          </Container>
-        </Box>
+        <Typography textAlign={'center'} sx={{ fontSize: '13px' }} mt={1}>
+          Copyright © 2023 The Apache Software Foundation.
+        </Typography>
+        <Typography textAlign={'center'} sx={{ fontSize: '14px' }} mt={0.5}>
+          The Apache Software Foundation Apache AGE, AGE, Apache, the Apache feather, and the Apache AGE project logo are either registered trademarks
+          or trademarks of the Apache Software Foundation.
+        </Typography>
       </Box>
     </footer>
   );
