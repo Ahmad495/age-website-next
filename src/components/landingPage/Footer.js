@@ -44,16 +44,18 @@ const Footer = () => {
               </Grid>
             ))}
             <Grid item xs={12} sm={2} sx={{ display: 'flex', flexDirection: 'row', justifyContent: { xs: 'center', md: 'start' } }}>
-              <Button
-                variant='contained'
-                endIcon={<DownloadIcon />}
-                sx={{
-                  display: { lg: 'flex' },
-                  backgroundImage: `linear-gradient(45deg, #CE39F2, #CA0F55)`,
-                }}
-              >
-                Download Age
-              </Button>
+              <Box>
+                <Button
+                  variant='contained'
+                  endIcon={<DownloadIcon />}
+                  sx={{
+                    display: { lg: 'flex' },
+                    backgroundImage: `linear-gradient(45deg, #CE39F2, #CA0F55)`,
+                  }}
+                >
+                  Download Age
+                </Button>
+              </Box>
             </Grid>
           </Grid>
         </Container>
